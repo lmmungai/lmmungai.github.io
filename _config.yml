@@ -22,10 +22,10 @@ repository               : "lmmungai/lmmungai.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "new_profile_photo.jpg"
   name             : "Leah Mungai"
   pronouns         : "she/her"  
-  bio              : "We need a new bio here. This is a placeholder."
+  bio              : "Researching human–environment dynamics in small farming systems. Using geospatial tech and AI to advance sustainable, resilient agri-food systems."
   location         : "Tuscaloosa, AL"
   employer         : "The University of Alabama"
   uri              : # URL
@@ -222,6 +222,9 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  research_activities:
+    output: true
+    permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
@@ -274,6 +277,14 @@ defaults:
       author_profile: true
       share: true
       comment: true
+  # _research_activities
+  - scope:
+      path: ""
+      type: research_activities
+    values:
+      layout: research-activity
+      author_profile: true
+      share: true
   # _talks
   - scope:
       path: ""
