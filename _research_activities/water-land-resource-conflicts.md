@@ -6,9 +6,6 @@ permalink: /research-activities/water-land-resource-conflicts
 venue: "Black Belt Region"
 date: 2026-02-11
 location: "Alabama, USA"
-header:
-    image: "research_photos/dimba_field1.jpg"
-    teaser: "research_photos/dimba_field1.jpg"
 gallery:
     - image_path: "research_photos/dimba_field1.jpg"
     - image_path: "research_photos/dimba_field2.jpg"
