@@ -19,9 +19,9 @@ Publications
   
 Research Activities
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+  {% for post in site.research_activities reversed %}
+    {% include archive-single-research-activity.html %}
+  {% endfor %}
   
 Teaching
 ======
