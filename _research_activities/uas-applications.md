@@ -1,5 +1,5 @@
 ---
-title: "Unmanned Aerial Systems (UAS) Applications | Jeremiah's Garden"
+title: "Unmanned Aerial Systems (UAS) Applications Jeremiah's Garden"
 collection: research_activities
 activity_type: "Unknown"
 permalink: /research-activities/uas-applications
