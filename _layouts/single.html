@@ -35,7 +35,12 @@ layout: default
         {% endif %}
         
         {% if page.collection == 'teaching' %}
-          <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p>
+            {% if page.course_code %}{{ page.course_code }}{% endif %}
+            {% if page.type %}{% if page.course_code %} - {% endif %}{{ page.type }}{% endif %}
+            {% if page.department %}{% if page.course_code or page.type %}, {% endif %}<i>{{ page.department }}</i>{% endif %}
+            {% if page.venue %}{% if page.course_code or page.type or page.department %}, {% endif %}{{ page.venue }}{% endif %}
+          </p>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}

@@ -36,7 +36,16 @@
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
+    {% if post.collection == 'teaching' %}
+      <p class="archive__item-excerpt" itemprop="description">
+        {% if post.course_code %}{{ post.course_code }}{% endif %}
+        {% if post.type %}{% if post.course_code %} - {% endif %}{{ post.type }}{% endif %}
+        {% if post.department %}{% if post.course_code or post.type %}, {% endif %}<i>{{ post.department }}</i>{% endif %}
+        {% if post.venue %}{% if post.course_code or post.type or post.department %}, {% endif %}{{ post.venue }}{% endif %}
+      </p>
+    {% elsif post.venue %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p>
+    {% endif %}
     </li>
  </article>
 </div>

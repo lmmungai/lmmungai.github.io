@@ -39,7 +39,12 @@
     {% endif %}
 
         {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p>
+            {% if post.course_code %}{{ post.course_code }}{% endif %}
+            {% if post.type %}{% if post.course_code %} - {% endif %}{{ post.type }}{% endif %}
+            {% if post.department %}{% if post.course_code or post.type %}, {% endif %}<i>{{ post.department }}</i>{% endif %}
+            {% if post.venue %}{% if post.course_code or post.type or post.department %}, {% endif %}{{ post.venue }}{% endif %}
+          </p>
         {% elsif post.collection == 'publications' %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.date %}
