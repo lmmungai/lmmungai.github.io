@@ -20,8 +20,11 @@ My research explores complexities in human-environment interactions found in sma
 
 **Professional Affiliations:**
 
-- American Geophysical Union – since 2022
-- Earth Science Women’s Network (ESWN) – Since 2022
-- American Association of Geographers – since 2012
-- Supporting Women in Geography (SWIG) – MSU Chapter, since 2016
-- American Society for Photogrammetry and Remote Sensing - Since 2018
+- American Geophysical Union
+- Earth Science Women’s Network (ESWN)
+- American Association of Geographers
+- Supporting Women in Geography (SWIG) – MSU Chapter
+- American Society for Photogrammetry and Remote Sensing
+- Southeastern Division of the American Association of Geographers (SEDAAG)
+- Global Land Programme
+- Kenya Scholars and Studies Association (KESSA)
